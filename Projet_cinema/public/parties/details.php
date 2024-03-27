@@ -89,6 +89,7 @@ if ($pays=="Etats-Unis"){
     <title>Les cinémas Haumont | Détail du film <?=$titre?></title>
 </head>
 <body>
+
 <div class="container d-flex my-auto mt-5 my-5">
     <div class="row flex-xl-row flex-column"><?php
     if (!$idIncorrect) {

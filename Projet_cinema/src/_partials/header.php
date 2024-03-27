@@ -17,7 +17,9 @@ if (isset($_SESSION["utilisateur"])) {
                 <li class='nav-item'>
                     <a class='nav-link' href='ajouter.php'>Ajouter un film</a>
                 </li>
-
+                <li class='nav-item'>
+                    <a class='nav-link' href='films_ajoutes.php'>Vos films ajoutés</a>
+                </li>
                     <li class='nav-item'>
                     <a class='nav-link' href='deconnexion.php'>Se déconnecter</a>
                 </li>

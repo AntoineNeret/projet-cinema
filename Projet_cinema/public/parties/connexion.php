@@ -15,6 +15,7 @@ require BASE_PROJET."/src/_partials/footer.php";
 require_once BASE_PROJET."/src/database/utilisateur_verifier_mail.php";
 require_once BASE_PROJET."/src/database/utilisateur_obtenir_mot_de_passe.php";
 require_once BASE_PROJET."/src/fonctions/Verifier_force_mdp.php";
+
 $erreurs = [];
 $bonMotDepasse=null;
 $pseudo = "";
@@ -29,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pseudo = $_POST["pseudo"];
     $mdp = $_POST["mdp"];
     $mail = $_POST["mail"];
+
     $mdp_utilisateurs = getPasswordfromUser($pseudo,$mail);
     if (empty($mdp_utilisateurs)){
         $erreurs["tout"] = "Une ou plusieurs informations saisies sont invalides";
